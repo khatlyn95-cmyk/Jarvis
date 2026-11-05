@@ -16,9 +16,16 @@ def iniciar_jarvis():
         elif comando == "sair":
             print("JARVIS Encerrado.")
             break
-        
+
+        elif comando in ("oi", "olá", "ola", "bom dia"):
+            print("Olá! Como posso ajudar?")
+
+        elif comando == "quem é você?":
+            print("Eu sou J.A.R.V.I.S., seu assistente virtual, em desenvolvimento.")
+
         else:
             print("Comando não reconhecido.")
 
 if __name__ == "__main__":
     iniciar_jarvis()
+
